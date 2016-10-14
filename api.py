@@ -11,7 +11,7 @@ def count_tweets():
         r = count_words.delay()
         return r.get()
 
-@app.route('/count_tweets/api/v1.0/count', methods=['GET'])
+@app.route('/count_tweets/api/v1.0/count_them', methods=['GET'])
 def counter():
         t = count_them()
         return t
