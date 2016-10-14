@@ -1,5 +1,5 @@
 from tasks import count_words, count_them
-from flask import Flask, render_template, send_file, make_response
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/index')
